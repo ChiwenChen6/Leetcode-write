@@ -6,6 +6,7 @@ Created on Tues Nov. 20 22:22 2020
 """
 
 
+
 typedef struct {
     int *org;
     int solsize;
@@ -30,21 +31,20 @@ int* solutionReset(Solution* obj, int* retSize) {
 /** Returns a random shuffling of the array. */
 int* solutionShuffle(Solution* obj, int* retSize) {
     *retSize=obj->solsize;
-    int *ret=(int*)calloc((*retSize),sizeof(int));
-    int *array=(int*)calloc((*retSize),sizeof(int));
+    
+    int *ret=(int*)calloc((*retSize),sizeof(int));//配置預設為型態的零值。這是準備回傳值
+    int *array=(int*)calloc((*retSize),sizeof(int));//配置預設為型態的零值
     int temp=0;
     int count=-1;
-    for(int i=0;i<*retSize;i++){
-        
-        temp=random()%((*retSize)-i);
+    for(int i=0;i<*retSize;i++){    
+        temp=random()%((*retSize)-i);//隨機大小的變動值位長度
         for(int j=0;j<*retSize;j++){
-            if(array[j]==0){
-                count++;
+            if(array[j]==0){//確認目前還有哪個數值還沒有填入array
+                count++;//計數記得
                 if(count==temp){
-                    array[j]=1;
-                    count=-1;
-                    
+                    array[j]=1;//隨機的部分進行確認已經放入準備回傳的array
                     ret[i]=obj->org[j];
+                    count=-1;//跳出迴圈前回復計數
                     break;
                 }
             }
