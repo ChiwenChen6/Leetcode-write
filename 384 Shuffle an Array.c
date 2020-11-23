@@ -54,7 +54,7 @@ int* solutionShuffle(Solution* obj, int* retSize) {
 }
 
 void solutionFree(Solution* obj) {
-    free(obj->org);
+    free(obj->org);//釋放記憶體
     free(obj);
 }
 
