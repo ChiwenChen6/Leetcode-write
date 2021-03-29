@@ -90,3 +90,7 @@ char * originalDigits(char * s){
     resp[ptr] = '\0';
     return resp;
 }
+
+
+// Runtime: 4 ms, faster than 100.00% of C online submissions for Reconstruct Original Digits from English.
+// Memory Usage: 6.4 MB, less than 100.00% of C online submissions for Reconstruct Original Digits from English.
