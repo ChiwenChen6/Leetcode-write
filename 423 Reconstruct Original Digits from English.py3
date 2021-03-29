@@ -28,3 +28,7 @@ class Solution:
         res += "9"*(s.count('i') - s.count('x') - s.count("g") - s.count('v') + s.count('s') - s.count('x'))
         
         return res
+
+    
+#     Runtime: 32 ms, faster than 99.40% of Python3 online submissions for Reconstruct Original Digits from English.
+# Memory Usage: 14.5 MB, less than 66.67% of Python3 online submissions for Reconstruct Original Digits from English.
