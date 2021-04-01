@@ -44,3 +44,5 @@ bool isPalindrome(struct ListNode* head) {
     }
     return true;
 }
+// Runtime: 128 ms, faster than 26.09% of C online submissions for Palindrome Linked List.
+// Memory Usage: 41.1 MB, less than 53.23% of C online submissions for Palindrome Linked List.
