@@ -12,3 +12,6 @@ class Solution:
                 res -= 1
         return res == 0
         
+# Status: Accepted
+# Runtime: 28 ms
+# Memory Usage: 14.4 MB
