@@ -17,3 +17,6 @@ func halvesAreAlike(s string) bool {
     }
     return x1 == x2
 }
+// Status: Accepted
+// Runtime: 0 ms
+// Memory Usage: 2.2 MB
