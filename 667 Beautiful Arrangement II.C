@@ -15,8 +15,7 @@ int* constructArray(int n, int k, int* returnSize){
     for(k; k > 0; k--){
         set[i] = set[i - 1] + k * mult;
         mult = -1 * mult;
-        i++;
-        
+        i++;   
     }
     if(i == n) {
         return set;
