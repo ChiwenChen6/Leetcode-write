@@ -202,4 +202,4 @@ int furthestBuilding(int *heights, int heightsSize, int bricks, int ladders)
 
     return i;
 }
-
+// Accepted	80 ms	12.8 MB	
