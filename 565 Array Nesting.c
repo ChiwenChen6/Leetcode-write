@@ -24,3 +24,7 @@ int arrayNesting(int* nums, int numsSize){
     }
     return max;
 }
+
+
+// Runtime: 14 ms, faster than 44.44% of C online submissions for Array Nesting.
+// Memory Usage: 6.7 MB, less than 66.67% of C online submissions for Array Nesting.
