@@ -40,6 +40,7 @@ int uniquePaths(int m, int n) {
 	return (int)(res+0.5);
 }
 """
+"""
     int Arr[m][n];
     for(int i=0;i<m;i++) {
         Arr[i][0]=1;
@@ -52,7 +53,8 @@ int uniquePaths(int m, int n) {
             Arr[i][j]=Arr[i-1][j]+Arr[i][j-1];
         }
     }
-    return Arr[m-1][n-1];    
+    return Arr[m-1][n-1];  
+"""
 """
 Runtime: 1452 ms, faster than 9.09% of C online submissions for Unique Paths. O(n^2}
 Memory Usage: 5.6 MB, less than 44.76% of C online submissions for Unique Paths.
